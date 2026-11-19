@@ -20,7 +20,7 @@ library BlindBoxStorage{
     }
 
     //标记为以揭示
-    function markAsReveale(BlindBox storage box) internal {
+    function markAsRevealed(BlindBox storage box) internal {
         box.revealed = true;
         box.revealTime = block.timestamp;
     }

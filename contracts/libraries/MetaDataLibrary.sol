@@ -15,7 +15,7 @@ library MetaDataLibrary{
      * @param rarity 稀有度
      */
     function buildTokenURI(string memory baseURI, uint256 tokenId,RarityLibrary.Rarity rarity ) internal pure returns (string memory tokenURI){
-        return string(abi.encodePacked(baseURI ,"/",RarityLibrary.rarityToString(rarity),"/",tostring(tokenId),".json"));
+        return string(abi.encodePacked(baseURI ,"/",RarityLibrary.rarityToString(rarity),"/",toString(tokenId),".json"));
     }
 
     /**

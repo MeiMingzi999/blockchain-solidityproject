@@ -48,7 +48,7 @@ contract VRFHandler is Initializable,OwnableUpgradeable,IVRFHandler{
         bool _nativePayment // VRF v2.5 支持原生代币支付
     )public initializer{
         //设置合约管理员
-        __Ownable_init();
+        __Ownable_init(msg.sender);
         vrfCoordinator = IVRFCoordinatorV2Plus(_vrfCoordinator);
         subscriptionId = _subscriptionId;
         callbackGasLimit = _callbackGasLimit;
