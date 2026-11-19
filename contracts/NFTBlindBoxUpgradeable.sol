@@ -185,6 +185,9 @@ contract NFTBlindBoxUpgradeable is
         );
     }
 
+    //=============拍卖==================
+
+
     // ============ 元数据管理（使用库）============
     /**
      * @dev 设置基础URI
@@ -319,6 +322,7 @@ contract NFTBlindBoxUpgradeable is
 
     // ============ 存储间隙（为未来升级预留）============
     uint256[40] private __gap;
+
 
 
 
